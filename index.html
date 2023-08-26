@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scientific Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <label class="toggle-switch">
+                    <input type="checkbox" onclick="changeColor()" id="toggle">
+                    <span class="slider"></span>
+                </label>
+                <div class="display">
+                    <input type="text" target="_blank" class="screen">
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <button onclick="ac()" class="red">AC</button>
+                        <button onclick="c()">C</button>
+                        <button onclick="root()">√</button>
+                        <button onclick="per()">%</button>
+                        <button onclick="sin()">sin()</button>
+                        <button class="button">(</button>
+                    </div>
+                    <div class="row">
+                        <button class="button">7</button>
+                        <button class="button">8</button>
+                        <button class="button">9</button>
+                        <button class="button">+</button>
+                        <button onclick="cos()">cos()</button>
+                        <button class="button">)</button>
+                    </div>
+                    <div class="row">
+                        <button class="button">4</button>
+                        <button class="button">5</button>
+                        <button class="button">6</button>
+                        <button class="button">-</button>
+                        <button onclick="tan()">tan()</button>
+                        <button onclick="e()">e<sup>x</sup></button>
+                    </div>
+                    <div class="row">
+                        <button class="button">1</button>
+                        <button class="button">2</button>
+                        <button class="button">3</button>
+                        <button class="button">*</button>
+                        <button onclick="log10()">log<sub>10</sub>()</button>
+                        <button onclick="log()">log()</button>
+                    </div>
+                    <div class="row">
+                        <button class="button">0</button>
+                        <button class="button">.</button>
+                        <button class="button">/</button>
+                        <button onclick="factorial()">!</button>
+                        <button onclick="power()">X<sup>x</sup></button>
+                        <button onclick="equalsTo()" class="green">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
